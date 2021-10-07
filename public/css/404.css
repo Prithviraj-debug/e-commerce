@@ -1,0 +1,19 @@
+.four04 {
+    display: block;
+    margin: 60px auto;
+}
+
+img.four04 {
+    width: 40%;
+}
+
+.four04-msg {
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+    margin-bottom: 30px;
+}
+
+.four04-msg a {
+    color: #383838;
+}

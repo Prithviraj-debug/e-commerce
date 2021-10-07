@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/bIb.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/addProduct.css">
+    <title>Add Product</title>
+</head>
+<body>
+    <img src="./assets/Ghost.gif" alt="" class="loader">
+
+    <p class="logo">brandisbrand</p>
+
+    <div class="form">
+        <input type="text" class="product-name" placeholder="product name">
+        <input type="text" class="desc" placeholder="product description">
+        <textarea name="" id="desc" cols="30" rows="10"></textarea>
+
+        <!-- Product Image -->
+        <div class="product-info">
+            <div class="product-image"><p class="text">product image</p></div>
+            <div class="upload-img-sec">
+                <!-- upload inputs -->
+                <p class="text"><img src="./img/camera-solid.svg" alt="">upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                    <label for="first-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                    <label for="second-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                    <label for="third-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden>
+                    <label for="fourth-file-upload-btn" class="upload-image"></label>
+                </div>
+            </div>
+        </div>
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="actual price">
+            <input type="number" id="discount" placeholder="discount percentage">
+            <input type="number" id="sell-price" placeholder="selling price">
+        </div>
+
+        <input type="number" id="stock" min="20" placeholder="item in stocks (min 20)">
+
+        <textarea name="" id="tags" cols="30" rows="10" placeholder="Enter tags here"></textarea>
+
+        <input type="checkbox" class="checkbox" id="tac" checked>
+        <label for="tac">product takes 20% from you total sell</label>
+
+        <div class="buttons">
+            <button class="btn" id="add-btn">add product</button>
+            <button class="btn" id="save-btn">save draft</button>
+        </div>
+    </div>
+
+
+    <script src="./js/token.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
